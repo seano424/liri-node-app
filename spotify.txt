@@ -1,0 +1,23 @@
+
+
+
+var Spotify = require('node-spotify-api');
+ 
+var spotify = new Spotify({
+  id: '339b49e3497747219168dcb49bdb2637',	
+  secret: '0eb3a7b9c15844338601ec654e333715'
+});
+ 
+
+function spotifymusic(){
+	console.log('entering track');
+	 request('https://api.spotify.com/v1/search?q=' + value + '&type=track', function(error, response, body) {
+	 	if(!error){
+	 		console.log(body);
+	 		// jsonBody = JSON.parse(body);
+	 		// console.log('howdy');
+	 		// console.log('Artist: ' + jsonBody);
+
+	 	}
+	 })
+	}
